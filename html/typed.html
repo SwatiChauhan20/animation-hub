@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Typed js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <section class="typed_js">
+        <div class="typed_section_1">
+            <div class="container">
+                <p class="typed"></p>
+            </div>
+        </div>
+        <a href="js_animation.html" class="back_arrow"><img src="../images/left-arrow.png"></a>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="../js/typed.js"></script>
+<script src="../js/custom.js"></script>
+<script>
+    var typed = $(".typed");
+    $(function () {
+        typed.typed({
+            strings: ["Put your heart, mind, and soul into even your smallest acts. This is the secret of success..",
+                "Wherever you go, go with all your heart..",
+                "The day is what you make it! So why not make it a great one?.",
+                "Learn from the mistakes of others. You can't live long enough to make them all yourselves!",
+                "Try to be a rainbow in someone's cloud."],
+            typeSpeed: 50,
+            showCursor: false,
+            loop: true,
+        });
+    });
+</script>
+
+</html>
