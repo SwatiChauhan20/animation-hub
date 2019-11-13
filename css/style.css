@@ -1333,11 +1333,35 @@ a {
     border-radius: 10px 10px 10px 10px;
     opacity: 0.9;
 }
+.ib-preview{
+    overflow-y: scroll;
+}
+#ib-img-preview::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
 
+#ib-img-preview::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#ib-img-preview::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background-color: silver;
+}  
 /* D-gallery css end */
 
 @media(max-width: 575px) {
     .wowWrap:nth-of-type(even) {
         margin-top: 0px;
+    }
+    .cursor,
+	.cursor-follower{
+        display: none;
     }
 }
