@@ -836,9 +836,9 @@ a.back_arrow:hover {
     transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.fancy-card1.card2, .fancy-card1.card4 {
+/* .fancy-card1.card2, .fancy-card1.card4 {
     margin-top: 200px;
-}
+} */
 
 .fancy-card1 .bottom {
     position: absolute;
@@ -903,7 +903,8 @@ a.back_arrow:hover {
     background-repeat: no-repeat;
     height: 100vh;
     cursor: none;
-    overflow: hidden;
+    background-color: #000;
+    /* overflow: hidden; */
 }
 
 /* social-card start */
@@ -1355,7 +1356,12 @@ a {
     background-color: silver;
 }  
 /* D-gallery css end */
-
+@media(max-width: 1199px
+){
+    .fancy-cards .fancy-card1{
+        margin-top: 30px;
+    }
+}
 @media(max-width: 575px) {
     .wowWrap:nth-of-type(even) {
         margin-top: 0px;
