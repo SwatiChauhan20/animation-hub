@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Questrial', sans-serif;
 }
 
 ul {
@@ -770,7 +771,40 @@ p.typed {
 /* wow js css end here */
 
 /* js_animation css start here */
-
+.first_section,
+.second_section,
+.third_section,
+.fourth_section,
+.fifth_section{
+    padding: 40px;
+    height: 100vh;
+}
+.section_image{
+    height: fit-content;
+    width: 100%;
+}
+.section_image img{
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+}
+.first_section{
+    background-color: #24305E;
+}
+.second_section{
+    background-color: #5da2d5 ;
+}
+.third_section{
+    background-color: #a8d0e6 ;
+}
+.fourth_section{
+    background-color: #f3d250 ;
+}
+.fifth_section{
+    background-color: #f78888 ;
+}
 .fancy-cards .fancy-card1 {
     display: inline-block;
     position: relative;
@@ -898,15 +932,33 @@ a.back_arrow:hover {
 }
 
 .js_animation_main {
-    background-image: url("../images/js_animation_bg.gif");
+    /* background-image: url("../images/js_animation_bg.gif"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     cursor: none;
-    background-color: #000;
-    /* overflow: hidden; */
 }
-
+.text-content{
+    padding: 30px;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    
+}
+.text-content a{
+    font-size: 50px;
+    color: silver;
+}
+.col-6.p-0 span {
+    font-size: 5.2vw;
+    color: #f1eeee;
+    font-family: 'Holtwood One SC', serif;
+    position: absolute;
+    bottom: 0;
+    right: -11%;
+    z-index: 1;
+    text-shadow: 1px 5px 9px rgba(0, 0, 0, 0.43);
+}
 /* social-card start */
 
 .deck {
@@ -1011,7 +1063,7 @@ span.fa {
 
 .cursor {
     position: absolute;
-    background-color: #fff;
+    background-color: silver;
     width: 6px;
     height: 6px;
     border-radius: 100%;
@@ -1037,7 +1089,7 @@ span.fa {
     background-color: rgba(255, 255, 255, 0.1);
     width: 30px;
     height: 30px;
-    border: 2px solid #fff;
+    border: 2px solid silver;
     border-radius: 100%;
     z-index: 1;
     transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
@@ -1054,25 +1106,6 @@ span.fa {
 
 .cursor-follower.hovered {
     opacity: 0.08;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 11px;
-    letter-spacing: 1px;
-}
-
-.link-list {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    list-style: none;
-}
-
-.link-list__item {
-    display: inline-block;
 }
 
 /* cursor css */
@@ -1334,40 +1367,47 @@ a {
     border-radius: 10px 10px 10px 10px;
     opacity: 0.9;
 }
-.ib-preview{
+
+.ib-preview {
     overflow-y: scroll;
 }
-#ib-img-preview::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-	border-radius: 10px;
+
+#ib-img-preview::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
 }
 
-#ib-img-preview::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
+#ib-img-preview::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
 }
 
-#ib-img-preview::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
+#ib-img-preview::-webkit-scrollbar-thumb {
+    border-radius: 10px;
     background-color: silver;
-}  
+}
+
 /* D-gallery css end */
-@media(max-width: 1199px
-){
-    .fancy-cards .fancy-card1{
+
+/* papercss page start here */
+
+.papercss_main_class {
+    background-image: url("../images/papercss_bg.png");
+    height: 100vh;
+}
+
+@media(max-width: 1199px) {
+    .fancy-cards .fancy-card1 {
         margin-top: 30px;
     }
 }
+
 @media(max-width: 575px) {
     .wowWrap:nth-of-type(even) {
         margin-top: 0px;
     }
-    .cursor,
-	.cursor-follower{
+    .cursor, .cursor-follower {
         display: none;
     }
 }

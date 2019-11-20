@@ -16,8 +16,8 @@ $(document).ready(function () {
 
             TweenMax.set(follower, {
                 css: {
-                    left: posX - 12,
-                    top: posY - 12
+                    left: posX - 10,
+                    top: posY - 10
                 }
             });
 
